@@ -1,0 +1,53 @@
+.header {
+    background-color: rgba(0, 169, 212, 0.33);
+    height: 50px;
+    margin-bottom: 10px;
+}
+body{
+    min-width: 810px;/*最小宽度*/
+}
+
+.atricle {
+    min-height: 500px;/*最小高度*/
+    overflow: hidden;/*多余隐藏*/
+}
+
+.footer {
+    background-color: rgba(0, 169, 212, 0.33);
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;/*文字水平居中*/
+}
+
+
+/*.atricle .middle {
+    height: 1000px;
+}*/
+
+.atricle .left {
+    background-color: rgba(0, 169, 212, 0.33);
+    float: left;
+    width: 200px;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;/*无限高*/
+}
+
+.atricle .right {
+    background-color: rgba(0, 169, 212, 0.33);
+    float: left;
+    width: 200px;
+    margin-left: -200px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.atricle .middle .inner {
+    float: left;
+    margin-left: 210px;
+    margin-right: 210px;
+    background-color: rgba(0, 169, 212, 0.33);
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+   
+}

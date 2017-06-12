@@ -1,0 +1,509 @@
+html,body {
+    height: 100%;
+}
+body {
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+   
+}
+
+input {
+    outline: none;
+}
+
+
+/*pc*/
+
+.wrapper {
+    position: relative;
+    min-width: 810px;
+    min-height: 600px;
+    height: 100%;
+    display: block;
+}
+
+.header {
+    overflow: hidden;
+}
+
+.header .nav {
+    float: right;
+    margin: 19px 0 5px 0;
+    padding: 0 142px 0 0;
+}
+
+.nav-a {
+    margin-left: 20px;
+}
+
+.header .nav a {
+    /*margin-left: 20px;*/
+    color: #333;
+    font-weight: bold;
+    /*字体加粗*/
+    line-height: 24px;
+    /*行高*/
+    font-size: 13px;
+    float: left;
+}
+
+.header .nav a:hover {
+    color: #00c;
+}
+
+
+/*设置下拉菜单*/
+
+.setting-menu {
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    right: 72px;
+    text-align: center;
+}
+
+.setting-menu a {
+    text-decoration: none;
+    /*去掉下划线*/
+    margin: 0;
+}
+
+.setting-menu:hover .baidu-setting {
+    display: block;
+}
+
+.setting-menu .baidu-setting {
+    position: absolute;
+    top: 25px;
+    left: -13px;
+    width: 60px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 101;
+    display: none;
+}
+
+.setting-menu .baidu-setting a {
+    /*设置下拉选项文字居中*/
+    display: inline-block;
+    width: 100%;
+    color: #333;
+}
+
+.setting-menu .baidu-setting a:hover {
+    color: #ffffff;
+    background: #3385ff;
+}
+
+.setting-menu .icon-trangle {
+    /*设置下拉三角图形*/
+    top: -11px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.setting-menu .icon-trangle:after {
+    /*设置下拉三角图形内*/
+    content: "";
+    top: -4px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #ffffff;
+}
+
+
+/*更多产品*/
+
+.more {
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+.more:hover {
+    color: #333;
+    text-decoration: none;
+    /*去掉下划线*/
+    background-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.setting-menu2:hover .baidu-setting2 {
+    display: block;
+}
+
+.baidu-setting2 {
+    list-style: none;
+    position: absolute;
+    right: 11px;
+    top: 31px;
+    z-index: 100;
+    display: none;
+}
+
+.baidu-setting2 li {
+    text-align: center;
+}
+
+.baidu-setting2 li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.baidu-setting2 li a:hover {
+    text-decoration: underline;
+    /*下划线*/
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+    border: none;
+    /*IE去除图片边框*/
+}
+
+
+/*主体部分*/
+
+.content {
+    position: relative;
+    top: 38.2%;
+    text-align: center;
+    /*居中只对行内起作用*/
+}
+
+.content .search-form {
+    position: relative;
+    height: 191px;
+    top: -191px;
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+.content .search-input {
+    width: 539px;
+    height: 28px;
+    border: 1px solid #ddd;
+    padding: 3px 0 3px 7px;
+    border-right-width: 0;
+    vertical-align: middle;
+    /*垂直对齐*/
+    position: relative;
+}
+
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;
+}
+
+.content .search-button {
+    width: 100px;
+    height: 35px;
+    margin: -5px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3383ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    /*垂直对齐*/
+    cursor: pointer;
+    /*箭头变小手*/
+}
+
+.content .search-button:hover {
+    background-color: #317ef3;
+}
+
+.content form div {
+    display: inline-block;
+    position: relative;
+}
+
+.content .icon-camera {
+    /*相机图标设置*/
+    float: left;
+    position: absolute;
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    top: 6px;
+    right: 102px;
+    background: url(../img/camera.png) 0px 2px no-repeat;
+    cursor: pointer;
+}
+
+.content .icon-camera:hover {
+    background: url(../img/camera.png) 0px -18px no-repeat;
+}
+
+
+/*底部信息*/
+
+.footer p {
+    text-align: center;
+    text-align: center\9\0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 44px;
+    padding-top: 130px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer p a {
+    color: #666;
+}
+
+.footer .copy-right a {
+    color: #666;
+}
+
+.footer .copy-right a:hover {
+    color: #666;
+}
+
+.footer p .icon-banquan {
+    /*版权图标*/
+    height: 10px;
+    width: 10px;
+}
+
+.footer p .ewm {
+    /*百度二维码*/
+    width: 60px;
+    height: 60px;
+}
+
+
+/*end pc*/
+
+
+/*手机*/
+
+
+
+/*天气 头部*/
+
+.container {
+	min-width: 200px;
+	max-width: 800px;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.header {
+    position: relative;
+}
+
+.top {
+    height: 220px;
+    background: #f1f1f1;
+}
+
+.top_t {
+    width: 300px;
+    height: 35px;
+}
+
+.top .top_a1 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 8px;
+    right: 16px;
+    background-image: url(data:image/png;base64,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);
+    background-size: 100% 100%;
+}
+
+
+/*end天气 头部*/
+
+.top img {
+    width: 181px;
+    height: 57px;
+    margin-bottom: 10px;
+}
+
+.top form {
+    display: block;
+   
+}
+
+.top .search-input {
+    width: 200px;
+    height: 35px;
+    vertical-align: middle
+}
+
+.top .search-button {
+    background: #38f;
+    height: 41px;
+    width: 82px;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: -4px;
+    vertical-align: middle;
+}
+.search{
+	width: 300px;
+	height: 41px;
+	position: relative;
+	margin:auto;
+}
+.icon-camera {
+    /*相机图标设置*/
+    position: absolute;
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    top: 8px;
+    right: 94px;
+    background: url(../img/camera.png) 0px 2px no-repeat;
+    cursor: pointer;
+}
+
+.icon-camera:hover {
+    background: url(../img/camera.png) 0px -18px no-repeat;
+}
+
+.nav2 {
+    display: block;
+    width: 270px;
+    height: 38px;
+    margin: 10px auto 10px auto;
+}
+
+.nav2 a {
+    float: left;
+    margin-left: 27px;
+    text-decoration: none;
+    line-height: 17px;
+    display: inline-block;
+}
+
+.nav2 a p {
+    font-size: 11px;
+    color: #999;
+}
+
+.nav2 .nav_a1 {
+    margin-left: 0px;
+}
+
+.navimg {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../img/tb.png) no-repeat;
+    background-size: 22px auto;
+}
+
+.navimg1 {
+    background-position: 0 -264px;
+}
+
+.navimg2 {
+    background-position: 0 -396px;
+}
+
+.navimg3 {
+    background-position: 0 -330px;
+}
+
+.navimg4 {
+    background-position: 0 -462px;
+}
+
+.navimg5 {
+    background-position: 0 -418px;
+}
+
+.navimg6 {
+    background-position: 0 -308px;
+}
+
+.fixed {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    bottom: 0;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.news {
+    margin: 10px;
+    text-align: center;
+}
+
+.news a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+/*end 手机*/
+
+@media screen and (min-width:800px) {
+    html {
+        font-size: 62.5%;
+    }
+    .wrapper {
+        display: block;
+    }
+    .container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width:800px) {
+ 
+    .wrapper {
+        display: none;
+    }
+    .container {
+        display: block;
+    }
+}

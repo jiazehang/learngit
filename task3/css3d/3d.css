@@ -1,0 +1,130 @@
+    #box {
+        -webkit-animation-name: animation;
+        /*设置动画名字*/
+        -webkit-animation-timing-function: ease-in-out;
+        /*本塞尔曲线*/
+        -webkit-animation-iteration-count: infinite;
+        /*一直循环*/
+        -webkit-animation-duration: 5s;
+        /*动画间隔时间*/
+        margin: 80;
+        -webkit-transform-style: preserve-3d;
+        /*指定3d渲染*/
+        -webkit-transform-origin: 80px 80px 0;
+        /*指定当前旋转的基准点*/
+        /*    -webkit-perspective: 300;*/
+        /*角度*/
+    }
+    
+    #box div {
+        position: absolute;
+        /*每个面进行绝对定位，脱离文档流*/
+        height: 162px;
+        width: 162px;
+        /*  border: 3px solid #000;*/
+        text-align: center;
+        font-size: 130px;
+    }
+    
+    @-webkit-keyframes animation {
+        10% {
+            -webkit-transform: rotateY(-90deg);
+        }
+        25% {
+            -webkit-transform: rotateY(-100deg)rotateZ(150deg);
+        }
+        50% {
+            -webkit-transform: rotateY(130deg)rotateZ(-150deg);
+        }
+        70% {
+            -webkit-transform: rotateY(130deg)rotateX(130deg);
+        }
+        85% {
+            -webkit-transform: rotateX(-180deg);
+        }
+    }
+    
+    #box .one {
+        -webkit-transform: translateZ(80px);
+        /*Z轴向前平移*/
+    }
+    
+    #box .two {
+        -webkit-transform: rotateX(-90deg) translateZ(80px);
+    }
+    
+    #box .three {
+        -webkit-transform: rotateX(90deg) translateZ(80px);
+    }
+    
+    #box .four {
+        -webkit-transform: rotateY(180deg) translateZ(80px);
+    }
+    
+    #box .five {
+        -webkit-transform: rotateY(-90deg) translateZ(80px);
+    }
+    
+    #box .six {
+        -webkit-transform: rotateY(90deg) translateZ(80px);
+    }
+    
+    #box .one .one1 {
+        height: 54px;
+        width: 54px;
+        background-color: #ff9800;
+        float: left;
+        position: relative;
+        border: 0px;
+        border-radius: 10px;
+    }
+    
+    #box .two .two2 {
+        height: 54px;
+        width: 54px;
+        background-color: #607d8b;
+        float: left;
+        position: relative;
+        border: 0px;
+        border-radius: 10px;
+    }
+    
+    #box .three .three3 {
+        height: 54px;
+        width: 54px;
+        background-color: #009688;
+        float: left;
+        position: relative;
+        border: 0px;
+        border-radius: 10px;
+    }
+    
+    #box .four .four4 {
+        height: 54px;
+        width: 54px;
+        background-color: #e91e63;
+        float: left;
+        position: relative;
+        border: 0px;
+        border-radius: 10px;
+    }
+    
+    #box .five .five5 {
+        height: 54px;
+        width: 54px;
+        background-color: #ffeb3b;
+        float: left;
+        position: relative;
+        border: 0px;
+        border-radius: 10px;
+    }
+    
+    #box .six .six6 {
+        height: 54px;
+        width: 54px;
+        background-color: #2196f3;
+        float: left;
+        position: relative;
+        border: 0px;
+        border-radius: 10px;
+    }

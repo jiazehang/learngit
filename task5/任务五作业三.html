@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>数组</title>
+    <script type="text/javascript">
+    var arr = ["a", "x", "b", "d", "m", "a", "k", "m", "p", "j", "a"];
+    document.write(arr + "<br>"); //打印数组
+    var count = {}; //接收字母出现的次数
+    var pos = {}; //索引
+    //遍历原数组并且生成新数组
+    for (var i = 0; i < arr.length; i++) { //创建i,i小于原数组arr长度，i++
+        if (count[arr[i]]) { //当前字母遇到相同的字母的时候
+            count[arr[i]] += 1; //当前字母出现的次数+1=当前字母出现的次数
+            pos[arr[i]] += ','	 + i; //当前字母的索引+相同字母出现的索引用","分隔
+        } else {
+            count[arr[i]] = 1; //如果字母和当前字母不一样的时候则等于1
+            pos[arr[i]] =  i; //当前字母的索引=i=0
+        }
+    }
+    //返回出现次数最多的字母的次数（降序排列后取第一个数字）
+    var max = count[Object.keys(count).sort(function(a, b) {
+        return count[a] <= count[b];
+    })[0]];
+    var most1 = [];
+    for (i in count) {
+        if (count[i] >= max) {
+            max = count[i];
+            most1.push(i);
+        }
+    }
+    document.write('出现次数最多的字母是:' + most1 + '<br>');
+    //将出现最多的字母的次数输出
+    for (var i = 0; i < most1.length; i++) {
+        document.write(most1[i] + '出现的次数为:' + count[most1[i]] + '<br>');
+        document.write(most1[i] + '的位置分别为:' + pos[most1[i]] + '<br>');
+    }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

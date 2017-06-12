@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>简易计算器</title>
+    <script type="text/javascript">
+    function calc() {
+        var num1 = (document.getElementById('num1').value);
+        var num2 = (document.getElementById('num2').value);
+        if (num1 == "") {
+            alert("请填写第一个数字！");
+            return;
+        }
+        if (num2 == "") {
+            alert("请填写第二个数字！");
+            return;
+        }
+        if (isNaN(num1)) {
+            alert("第一个必须为数字！");
+            return;
+        }
+        if (isNaN(num2)) {
+            alert("第二个必须为数字！");
+            return;
+        }
+        var num1 = Number(num1);
+        var num2 = Number(num2);
+
+        var operator = document.getElementById('op').value;
+        var sum = jisuan(num1, num2, operator);
+        document.getElementById('result').innerText = sum;
+
+    }
+
+    function jisuan(n1, n2, oper) {
+        switch (oper) {
+            case '+':
+                return n1 + n2;
+            case '-':
+                return n1 - n2;
+            case '*':
+                return n1 * n2;
+            case '/':
+            if (n2==0) {
+            	alert("被除数不能为0！");
+            	return;
+            }
+               return n1 / n2;
+            default:
+                return "未知操作符";
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="num1">
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" id="num2">=
+    <span id="result" style="color: red;font-size: 20px;"></span>
+    <button onclick="calc()">计算</button>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+@backgroundColor: #009200;
+@lineBackground: #f00;
+@brandBackground:#ccc;
+@borderRadius:20px;
+@fontSizi:1px;
+
+html {
+    margin: 0;
+    padding: 0;
+    font: 400 12px/1.4 Verdana, "Lantinghei SC", "Hiragino Sans GB", 'Microsoft YaHei', Helvetica, arial, simsun, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    display: block;
+    width: 300px;
+    height: 550px;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 15px solid #7b7b7b;
+    border-bottom: 0;
+    border-top-left-radius: @borderRadius;
+    border-top-right-radius: @borderRadius;
+    .top {
+        display: block;
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background: @backgroundColor;
+        h1 {
+            text-align: center;
+            line-height: 50px;
+        }
+    }
+    .main {
+        .content {
+            display: block;
+            height: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: #fff;
+            .contentT {
+                height: 40px;
+                background: @brandBackground;
+                .road {
+                    display: inline-block;
+                    float: left;
+                    margin-top: 5px;
+                    background: @lineBackground;
+                    height: 30px;
+                    width: 45px;
+                    h1 {
+                        color: #fff;
+                        line-height: 0;
+                        text-align: center;
+                    }
+                }
+                .sites {
+                    display: inline-block;
+                    width: 190px;
+                    height: 100%;
+                    float: right;
+                    background-color: @brandBackground;
+                    margin-right: 32px;
+                    span {
+                        font-size: @fontSizi*18;
+                        line-height: 40px;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+            .contentC {
+                ul {
+                    display: block;
+                    height: 130px;
+                    background: @backgroundColor;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        display: inline-block;
+                        width: 17px;
+                        height: 100%;
+                        margin-left: 5px;
+                        list-style: none;
+                        font-size: @fontSizi*14;
+                        float: left;
+                        overflow: hidden;
+                        span {
+                            height: 100%;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+                        }
+                        .currentSite {
+                            color: @lineBackground;
+                        }
+                    }
+                }
+            }
+            .contentF {
+                display: block;
+                height: 30px;
+                background:@brandBackground;
+                position: relative;
+                .line {
+                    display: inline-block;
+                    height: 2px;
+                    width: 265px;
+                    background:@lineBackground;
+                    margin-top: 15px;
+                    margin-left: 15px;
+                }
+                .arrow {
+                    width: 0;
+                    height: 0;
+                    border: 10px solid;
+                    border-left-color: transparent;
+                    border-top-color: transparent;
+                    border-right-color: transparent;
+                    border-bottom-color: @lineBackground;
+                    position: absolute;
+                    transform: skew(59deg, 0deg);
+                    top: -3px;
+                    right: 25px;
+                }
+            }
+        }
+    }
+}

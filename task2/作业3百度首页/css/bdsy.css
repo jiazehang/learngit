@@ -1,0 +1,156 @@
+.nav {
+    width: 493px;
+    float: right;
+}/*导航栏*/
+
+header nav a {
+    color: black;
+    margin-left: 7px;
+}/*导航按钮链接*/
+header nav a:hover{
+    color: blue;
+}
+
+header {
+    overflow: hidden;
+}
+
+.content input {
+    width: 540px;
+    height: 36px;
+    outline: none;
+    padding-left: 5px;
+}/*输入框*/
+.content input:hover {
+    border:2px solid #ccc;
+}
+.content input:focus{/*鼠标单击变色*/
+    border: 1px solid #38f;
+}
+.content {
+    text-align: center;
+   
+}
+
+.content button {
+    width: 100px;
+    height: 42px;
+    background-color: #3385ff;
+    border: 0px;
+    color: #fff;
+    margin-left: -8px;
+}/*提交按钮*/
+
+.anzt {
+    font-size: 15px;
+    color: #fff;
+}
+
+.f1 {
+    text-align: left;
+    font-size: 12px;
+    color: #999;
+}/*页脚详情*/
+
+.img1 {
+    width: 60px;
+    height: 60px;
+    margin-left: 320px;
+    margin-top: 280px;
+}/*百度二维码*/
+
+.img2 {
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+    margin-top: 280px;
+}/*糯米二维码*/
+
+.d2 {
+    display: inline-block;
+
+}/*手机百度快人一步*/
+
+.d3 {
+    display: inline-block;
+}/*百度糯米一元大餐*/
+
+.b2 {
+    float: left;
+}
+
+.f0 {
+    padding-top: 287px;
+    margin-right: 200px;
+    float: left;
+    margin-left: 30px;
+}/*页脚*/
+.xiala2{
+	display: inline-block;
+    background: #38f;
+    color: #fff;
+}/*更多产品栏*/
+.xiala1{
+    display: inline-block;
+}/*设置栏*/
+.xialaul2{
+	width: 90px;
+	height: 70px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    text-align: center;
+}/*更多产品ul*/
+.div1 ul{
+	display: none;
+}
+.div1:hover ul{
+	 display:block;
+    list-style: none;
+} 
+.div1{
+	display: inline;
+}
+span ul{
+    display: none;
+}
+span:hover ul{
+    color: #00c;
+    display: block;
+    list-style: none;
+ }
+
+.xialaul1{
+    right: 100px;
+    top: 10px;
+    position: absolute;
+}/*设置ul*/
+.camera{
+    float: right;
+    position: absolute;
+    right: 430px;
+}/*搜索框图标*/
+.a1{
+    height: 50px;
+    width: 50px;
+}/*更多产品>音乐*/
+.a2{
+    height: 50px;
+    width: 50px;
+}/*更多产品>图片*/
+.a3{
+    height: 50px;
+    width: 50px;
+}/*更多产品>知道*/
+.a4{
+    height: 50px;
+    width: 50px;
+}/*更多产品>文库*/
+.a5{
+    height: 50px;
+    width: 50px;
+}/*更多产品>风云榜*/
+.camera{
+    background-image: url();
+}
+

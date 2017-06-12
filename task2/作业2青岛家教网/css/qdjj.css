@@ -1,0 +1,40 @@
+   .daohang{
+        text-decoration: none;
+        color: rgb(255, 0, 153);
+        float: right;
+        margin-left: 10px;
+        font-size: 12px;
+        border-color: #EEEEEE;
+
+    }
+    .biaoge{
+    	background-color: #ffffff;
+    	padding: 10px;
+        margin-left:auto;margin-right:auto;
+    	width: 710px;
+        border-radius: 20px;
+
+    }
+    .thead{
+
+    }
+    .tbody{
+    	font-size: 12px;
+    }
+    .c1{
+    	color: #0000ff;
+    }
+    .xiaobiaoti{
+    	font-size: 13px;
+    	color: #003399;
+    }
+    .nav{
+    	margin-left: 29px;
+    }
+    .daohangweizhi{
+    	margin-right: 40px;
+
+    }
+    .anniu{
+
+    }

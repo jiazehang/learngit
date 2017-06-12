@@ -1,0 +1,121 @@
+html {
+  margin: 0;
+  padding: 0;
+  font: 400 12px/1.4 Verdana, "Lantinghei SC", "Hiragino Sans GB", 'Microsoft YaHei', Helvetica, arial, simsun, sans-serif;
+}
+body {
+  background-color: #fff;
+}
+.container {
+  display: block;
+  width: 300px;
+  height: 550px;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 15px solid #7b7b7b;
+  border-bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container .top {
+  display: block;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #009200;
+}
+.container .top h1 {
+  text-align: center;
+  line-height: 50px;
+}
+.container .main .content {
+  display: block;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.container .main .content .contentT {
+  height: 40px;
+  background: #ccc;
+}
+.container .main .content .contentT .road {
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  background: #f00;
+  height: 30px;
+  width: 45px;
+}
+.container .main .content .contentT .road h1 {
+  color: #fff;
+  line-height: 0;
+  text-align: center;
+}
+.container .main .content .contentT .sites {
+  display: inline-block;
+  width: 190px;
+  height: 100%;
+  float: right;
+  background-color: #ccc;
+  margin-right: 32px;
+}
+.container .main .content .contentT .sites span {
+  font-size: 18px;
+  line-height: 40px;
+  display: block;
+  text-align: center;
+}
+.container .main .content .contentC ul {
+  display: block;
+  height: 130px;
+  background: #009200;
+  padding: 0;
+  margin: 0;
+}
+.container .main .content .contentC ul li {
+  display: inline-block;
+  width: 17px;
+  height: 100%;
+  margin-left: 5px;
+  list-style: none;
+  font-size: 14px;
+  float: left;
+  overflow: hidden;
+}
+.container .main .content .contentC ul li span {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.container .main .content .contentC ul li .currentSite {
+  color: #f00;
+}
+.container .main .content .contentF {
+  display: block;
+  height: 30px;
+  background: #ccc;
+  position: relative;
+}
+.container .main .content .contentF .line {
+  display: inline-block;
+  height: 2px;
+  width: 265px;
+  background: #f00;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.container .main .content .contentF .arrow {
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #f00;
+  position: absolute;
+  transform: skew(59deg, 0deg);
+  top: -3px;
+  right: 25px;
+}

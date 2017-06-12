@@ -1,0 +1,249 @@
+html,body{
+	height: 100%;
+}
+body{
+	font: 12px arial;
+	margin:0;
+	padding: 0;
+}
+input{
+	outline: none;
+}
+
+.wrapper{
+	position: relative;
+	min-width: 810px;
+	min-height: 600px;
+	height: 100%;
+}
+header{
+	overflow: hidden;
+}
+header nav{
+	float: right;
+	margin: 19px 0 5px 0;
+	padding: 0 142px 0 0;
+}
+header nav a{
+	margin-left: 20px;
+	color: #333;
+	font-weight: bold;/*字体加粗*/
+	line-height: 24px;/*行高*/
+	font-size: 13px;
+	float: left;
+}
+header nav a:hover{
+	color: #00c;
+}
+/*设置下拉菜单*/
+.setting-menu{
+	position: absolute;
+	width: 50px;
+	height: 24px;
+	right: 72px;
+	text-align: center;
+}
+.setting-menu a{
+	text-decoration: none;/*去掉下划线*/
+	margin: 0;
+
+}
+.setting-menu:hover .baidu-setting{
+	display: block;
+}
+.setting-menu .baidu-setting{
+	position: absolute;
+	top: 25px;
+	left: -13px;
+	width: 60px;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 5px #ddd;
+	z-index: 101;
+	display: none;
+}
+.setting-menu .baidu-setting a{/*设置下拉选项文字居中*/
+	display: inline-block;
+	width: 100%;
+	color: #333;
+}
+.setting-menu .baidu-setting a:hover{
+	color: #ffffff;
+	background:#3385ff;
+}
+.setting-menu .icon-trangle{/*设置下拉三角图形*/
+	top: -11px;
+	left: 25px;
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	border:5px solid transparent;
+	border-style: dashed dashed solid dashed;
+	border-bottom-color: #d8d8d8;
+}
+.setting-menu .icon-trangle:after{/*设置下拉三角图形内*/
+	content: "";
+	top: -4px;
+	left: -5px;
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	border:5px solid transparent;
+	border-style: dashed dashed solid dashed;
+	border-bottom-color: #ffffff;
+}
+/*更多产品*/
+.more{
+	position: absolute;
+	top: 19px;
+	right: 10px;
+	width: 60px;
+	height: 23px;
+	float: left;
+	color: white;
+	background: #38f;
+	line-height: 24px;
+	font-size: 13px;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 1px solid #38f;
+	margin-left: 19px;
+	margin-right: 2px;
+	text-decoration: none;
+}
+
+.more:hover{
+	color: #333;
+	text-decoration: none;/*去掉下划线*/
+	background-color: #fff;
+	border-bottom-color: #fff;
+}
+.setting-menu2:hover .baidu-setting2{
+	display: block;
+}
+.baidu-setting2{
+	list-style: none;
+    position: absolute;
+    right: 11px;
+    top: 31px;
+    z-index: 100;
+    display: none;
+
+
+}
+.baidu-setting2 li{
+	text-align: center;
+}
+.baidu-setting2 li a{
+	  text-decoration: none;
+	  color: #333;
+
+
+}
+.baidu-setting2 li a:hover{
+	text-decoration:underline;/*下划线*/
+}
+.img{
+	height: 50px;
+	width:50px;
+}
+
+/*主体部分*/
+.content{
+	position: relative;
+	top: 38.2%;
+	text-align: center;/*居中只对行内起作用*/
+
+}
+.content .search-form{
+	position: relative;
+	height: 191px;
+	top: -191px;
+}
+.content img{
+	width: 270px;
+	height: 129px;
+}
+.content .search-input{
+	width: 539px;
+	height: 28px;
+	border: 1px solid #ddd;
+	padding: 3px 0 3px 7px; 
+	border-right-width:0; 
+	vertical-align: middle;/*垂直对齐*/
+	position: relative;
+
+
+}
+.content .search-input:hover{
+	border-color: #999 transparent #b3b3b3 #999;
+}
+.content .search-input:focus{
+	border-color: #4791ff transparent #4791ff #4791ff;
+}
+.content .search-button{
+	width: 100px;
+	height: 35px;
+	margin: -5px;
+	color: white;
+	font-size: 15px;
+	letter-spacing:1px;
+	background: #3383ff;
+	border:1px solid #2d78f4;
+	vertical-align: middle;/*垂直对齐*/
+	cursor: pointer;/*箭头变小手*/
+}
+.content .search-button:hover{
+	background-color: #317ef3;
+}
+.content form div{
+	display: inline-block;
+	position: relative;
+}
+/*相机图标设置*/
+.content .icon-camera{
+	float: left;
+	position: absolute;
+	display: inline-block;
+	width: 19px;
+	height: 18px;
+	top: 6px;
+	right: 102px;
+	background: url(../img/camera.png) 0px 2px no-repeat;
+	cursor: pointer;
+
+}
+.content .icon-camera:hover{
+	background: url(../img/camera.png) 0px -19px no-repeat;
+}
+/*底部信息*/
+footer p{
+	text-align: center;
+}
+footer{
+	position: absolute;
+	bottom: 44px;
+	padding-top: 150px;
+	text-align: center;
+	width: 100%;
+}
+footer p a{
+	color: #666;
+
+}
+
+footer .copy-right a{
+	color: #666;
+}
+footer .copy-right a:hover{
+	color: #666;
+}
+footer p .icon-banquan{
+	height: 10px;
+	width: 10px;
+}
+footer p .ewm{
+	width: 60px;
+	height: 60px;
+}
